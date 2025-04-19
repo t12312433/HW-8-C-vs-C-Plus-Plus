@@ -9,7 +9,8 @@ Here’s a basic structure you can follow for your README:
 - Affiliation: UMBC - Cmsc 313, M-W 8:30-9:45
 
 ## PURPOSE OF SOFTWARE:
-
+This software was created for submisson to HW 8 for Cmsc 313 at UMBC, and is a matrix library in C and C++.
+That has the functions of matrix addition, scalar matrix multiplication, matrix transposition, and matrix multiplication.
 
 ## FILES:
 
