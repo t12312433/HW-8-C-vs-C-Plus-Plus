@@ -60,4 +60,20 @@ That has the functions of matrix addition, scalar matrix multiplication, matrix 
 - Compiled using GCC for x86 architecture.
 - Written to comply with C99 for the C version and standard C++ practices for the C++ version.
 
+## Expected output:
+### C matrix valgrind
+![image](https://github.com/user-attachments/assets/c2f1d596-39f5-44fa-a468-fa433dc5319e)
+
+
+### C matrix test valgrind
+![image](https://github.com/user-attachments/assets/1b3ad4c3-032a-4aa2-9332-cbb7a500da2b)
+
+
+### C++ matrix valgrind
+![image](https://github.com/user-attachments/assets/59e30406-9a21-4fa5-83f8-21490e520a05)
+
+
+### C++ matrix test valgrind
+![image](https://github.com/user-attachments/assets/db0395b6-76aa-495e-92f1-87df6dd249f9)
+
 ---
