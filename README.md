@@ -16,12 +16,14 @@ That has the functions of matrix addition, scalar matrix multiplication, matrix 
 - Matrix.cpp – Implementation of the Matrix class in C++
 - Matrix.h – Header file for the matrix class
 - main.cpp – Main driver program using the matrix class to solve the specified problem
+- test.cpp - Test program to check the matrix functions outside the specified problem
 - makefile – Build instructions for the C++ program
 
 - Matrix Program C  - Folder containg the C matrix files
 - Matrix.c – Implementation of matrix operations in C
 - Matrix.h – Header file for matrix operations
 - main.c – Main driver program using the matrix functions to solve the specified problem
+- test.c - Test program to check the matrix functions outside the specified problem
 - makefile – Build instructions for the C program
 
 ## BUILD INSTRUCTIONS:
