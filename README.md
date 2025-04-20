@@ -1,5 +1,3 @@
-Here’s a basic structure you can follow for your README:
-
 ---
 
 # Matrix Library - C vs C++
