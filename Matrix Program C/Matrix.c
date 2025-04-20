@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// Create Matrix
+// Creates a matrix of the specified size full of zeros
 Matrix* create_matrix(int newRows, int newCols) {
 
     // Checks if the passed rows and columns are valid
@@ -20,7 +22,7 @@ Matrix* create_matrix(int newRows, int newCols) {
         for(int i = 0; i < newMatrix->rows; i++) {
 
             // Creates the current column
-            newMatrix->matrix[i] = malloc(sizeof(int*) * newCols);
+            newMatrix->matrix[i] = malloc(sizeof(int) * newCols);
 
             // Iterates through the current column initializing to zero
             for(int j = 0; j < newMatrix->cols; j++) {
@@ -42,10 +44,10 @@ Matrix* create_matrix(int newRows, int newCols) {
 
     }// End of if statement
 
+}// End of Create Matrix
 
-
-}
-
+// Create initialized Matrix
+// Creates a matrix of the specified size with the passed initial values
 Matrix* create_initialized_matrix(int * initialValues, int initialSize,int newRows, int newCols) {
 
     // Checks if the passed rows and columns are valid
@@ -101,28 +103,41 @@ Matrix* create_initialized_matrix(int * initialValues, int initialSize,int newRo
 
     }// End of if statement
 
-}
+}// End of Create initialized Matrix
 
-
+// Destroy Matrix
+// Deallocates the passed matrix
 void destroy_matrix(Matrix* matrix) {
 
+    // Checks if the matrix is empty
     if(matrix != NULL) {
 
+        // Checks if the member matrix is empty
         if(matrix->matrix != NULL) {
 
+            // Iterates through the rows deleting the slots
             for(int i = 0; i < matrix->rows; i++) {
 
-                free(matrix->matrix[i]);
+                // Checks if the current slot is empty
+                if(matrix->matrix[i] != NULL) {
 
-            }
+                    free(matrix->matrix[i]);
 
-        }
+                }// End of if statement
 
-        free(matrix->matrix);
+            }// End of for loop
+
+            // Deallocates member matrix
+            free(matrix->matrix);
+
+        }// End of if statement
+
+        // Deallocates the matrix
         free(matrix);
 
-    }
-}
+    }// End of if statement
+
+}// End of Destroy Matrix
 
 // Matrix Print Function
 // Prints the matrix to the console in a readable format
@@ -152,7 +167,7 @@ void print_matrix(const Matrix* printMatrix) {
 
         }// End of if statement
 
-}
+}// End of Matrix Print Function
 
 // Matrix Addition
 // Returns the matrix addition result of the two passed matrices

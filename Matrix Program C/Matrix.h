@@ -15,7 +15,7 @@ Matrix* create_matrix(int newRows, int newCols);
 // Creates a matrix of the specified size with the passed initial values
 Matrix* create_initialized_matrix(int * initialValues, int initialSize,int newRows, int newCols);
 
-// Deallocate the passed matrix
+// Deallocates the passed matrix
 void destroy_matrix(Matrix* matrix);
 
 // Prints the passed matrix
