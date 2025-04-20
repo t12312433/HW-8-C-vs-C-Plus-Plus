@@ -32,13 +32,24 @@ That has the functions of matrix addition, scalar matrix multiplication, matrix 
    ```
    make
    ```
-4. Run the test program using make run or make run-val for memory checking
+   Or if you want to compile the tests not the sample problem
+      ```
+   make test
+   ```
+5. Run the test program using make run or make run-val for memory checking
      ```
    make run
    ```
       ```
    make run-val
    ```
+   Or if you want to run the tests not the sample problem
+   ```
+   make test-run
+   ```
+   ```
+   make test-val
+   ``` 
 
 
 ## TESTING METHODOLOGY:
